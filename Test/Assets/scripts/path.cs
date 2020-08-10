@@ -19,6 +19,8 @@ public class path : MonoBehaviour
        transform.position = path_c.path.GetPointAtDistance(dstTravelled, end);
        Quaternion target = Quaternion.Euler(180,0,-90);
        Quaternion currentRotation= path_c.path.GetRotationAtDistance(dstTravelled, end);
+       transform.rotation = path_c.path.GetRotationAtDistance(dstTravelled, end);
+
        transform.rotation = currentRotation * target;
        Debug.Log(path_c.path.GetRotationAtDistance(dstTravelled, end).eulerAngles);
     }

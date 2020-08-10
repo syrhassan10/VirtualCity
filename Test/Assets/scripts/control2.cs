@@ -17,6 +17,8 @@ public class control2 : MonoBehaviour
     public float gravity = 20.0F;
     private Vector3 jump_vector = Vector3.zero;
 
+    private bool child_kidnapped = false;
+
 
     private Vector3 last_pos;
 
@@ -62,6 +64,7 @@ public class control2 : MonoBehaviour
         {
            //door.gameObject.SetAvtive(false);
             //SceneManager.LoadScene("jordan");
+            // /child_kidnapped = true;
         }
         
     }
