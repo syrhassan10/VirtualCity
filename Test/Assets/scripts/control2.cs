@@ -12,6 +12,8 @@ public class control2 : MonoBehaviour
     private CharacterController controller;
     public Transform vrHead;
 
+    public GameObject boat;
+
     //public GameObject door;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
@@ -64,7 +66,8 @@ public class control2 : MonoBehaviour
         {
            //door.gameObject.SetAvtive(false);
             //SceneManager.LoadScene("jordan");
-            // /child_kidnapped = true;
+            // /child_kidnapped = true;//         
+
         }
         
     }
